@@ -1,0 +1,42 @@
+.App {
+  display: grid;
+
+  grid-template-columns:  2fr 10fr;
+  grid-template-rows:  60px 1fr 60px;
+
+  grid-template-areas:
+  'h h'
+  'n c'
+  'f f'
+;
+  gap: 10px;
+  height: 100vh;
+}
+
+.header,
+.nav,
+.content,
+.footer{
+  width: 100%;
+}
+
+
+.header {
+  grid-area: h;
+  background-color:  chocolate;
+}
+
+.nav {
+  grid-area: n;
+  background-color:  cornflowerblue;
+}
+
+.content {
+  grid-area: c;
+  background-color:  goldenrod;
+}
+
+.footer {
+  grid-area: f;
+  background-color:  lawngreen;
+}
